@@ -1,0 +1,179 @@
+@import "modern-normalize.css";
+
+/* fonts */
+@font-face {
+    font-family: 'Inter 24pt';
+    src: url('assets/fonts/Inter24pt-Light.woff2') format('woff2'),
+        url('assets/fonts/Inter24pt-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter 24pt';
+    src: url('assets/fonts/Inter24pt-Medium.woff2') format('woff2'),
+        url('assets/fonts/Inter24pt-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter 24pt';
+    src: url('assets/fonts/Inter24pt-Italic.woff2') format('woff2'),
+        url('assets/fonts/Inter24pt-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rogue Script';
+    src: url('assets/fonts/rougescript-regular-webfont.woff2') format('woff2'),
+        url('assets/fonts/rougescript-regular-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;}
+
+/* normalization */
+:root {
+  line-height: 1.5;
+  font-family: 'Inter 24pt', sans-serif;
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+/* normalize/reset sheet from  https://mattbrictson.com/blog/css-normalize-and-reset */
+
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+div.image-container {
+    /* flex: 1; */
+    background-image: url(assets/alex-panarin-8I7zeoZ6pQ8-unsplash.jpg);
+    background-position: center;
+    background-size: contain;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'Rouge Script', serif;
+}
+
+div#title {
+    background-color: rgba(89, 89, 89, 0.7);
+    margin-top: 10rem;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 6rem;
+    gap: 1rem;
+}
+
+img#logo {
+    width: 5rem;
+    aspect-ratio: initial;
+}
+
+a.white {
+    color: white;
+}
+
+.pic-credit {
+    padding-bottom: 1rem;
+}
+
+
+div.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 16px;
+    font-size: 1.5rem;
+    background-color: rgb(232, 231, 231);
+}
+
+div.form-container>* {
+    padding: 16px;
+}
+
+form {
+    background-color: white;
+}
+
+section.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.input-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    min-width: 100px;
+}
+
+label {
+    font-size: 0.5em;
+}
+
+input {
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding: 4px;
+    max-width: 200px;
+    font-size: 0.8em;
+}
+
+input:focus {
+    box-shadow: 0px 0px 20px 1px #848484;
+    border: 2px solid blue;
+}
+
+input:invalid {
+    border: 2px solid rgb(178, 0, 0);
+    border-radius: 4px;
+}
+
+button {
+    background-color: rgb(0, 48, 0);
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    padding: 8px 32px;
+    margin-top: 16px;
+    box-shadow: 5px 5px 20px #848484;
+}
+/* div.form-container>p {
+} */
